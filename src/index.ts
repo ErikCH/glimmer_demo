@@ -1,4 +1,5 @@
 import App from './main';
+import 'regenerator-runtime/runtime';
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
 
 const app = new App();
