@@ -11,8 +11,7 @@ export default class TrackWeather extends Component {
 	async loadWeather() {
 		// let zip = this.args.zip || 97239;
 		let response = await fetch(`http://api.wunderground.com/api/625172310aff38a6/conditions/q/CA/San_Francisco.json`);
-		console.log(response);
 		this.weather = await response.json();
-		// setTimeout( () => { this.loadWeather(); }, 2000);
+		setTimeout( () => { this.loadWeather(); }, 3000);
 	}
 };
