@@ -7,7 +7,7 @@
   	</address>
 
 	<div>
-	  	<img src="https://icons.wxug.com/i/c/i/{{weather.current_observation.icon}}.gif" alt="weather_icon"/>	
+	  	<img src="https://icons.wxug.com/i/c/i/{{weather.current_observation.icon}}.gif" alt="weather_icon"/>
 	</div>
 
 
@@ -18,9 +18,7 @@
 	</div>
 
 	<br/>
-	
-	<input type="text" placeholder="Zip Code" onkeyup={{action @onKeyUp}}/> 
-	<button>Submit</button>
+
+	<input type="text" placeholder="Zip Code" onkeyup={{action onKeyUp}}/>
+	<button onclick={{action clicked}}>Submit</button>
 </div>
-
-
